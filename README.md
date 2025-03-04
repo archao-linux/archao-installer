@@ -1,2 +1,1 @@
-# archao-installer
-Installer
+# Installer
