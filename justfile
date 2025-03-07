@@ -30,6 +30,19 @@ systemd-silent:
     @echo "silencing boot..."
     sudo sed -i '/^options/s/$/ quiet splash/' /boot/loader/entries/*_linux-zen.conf
 
+## PLYMOUTH ##
+# Add Plymouth Hook
+hook-plymouth:
+    @echo "adding plymouth hook..."
+    sudo sed -i 's/HOOKS=(base udev/HOOKS=(base udev plymouth/' /etc/mkinitcpio.conf
+
+# Add Plymouth Theme
+theme-plymouth:
+    @echo "adding plymouth theme..."
+    sudo unzip files/plymouth/arc-mac-style.zip -d /usr/share/plymouth/themes/
+    sudo plymouth-set-default-theme arc-mac-style
+    sudo mkinitcpio -P
+
 # Install OMB
 install-omb:
     @echo "installing omb..."
