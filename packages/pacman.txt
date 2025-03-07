@@ -1,5 +1,6 @@
 # BASIC #
 git
+xarchiver
 nautilus
 
 # TERMINAL #
