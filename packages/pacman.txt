@@ -9,6 +9,7 @@ fastfetch
 
 # THEMING #
 plymouth
+sddm
 kvantum-qt5
 
 # AUDIO #

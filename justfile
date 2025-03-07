@@ -1,6 +1,7 @@
 # VARIABLES #
 # Define PACKAGES
 PACKAGES := `grep -v '^#' packages/pacman.txt | awk NF | tr '\n' ' ' | sed 's/ $//'`
+# Define AUR_PACKAGES
 AUR_PACKAGES := `grep -v '^#' packages/aur.txt | awk NF | tr '\n' ' ' | sed 's/ $//'`
 
 # RECIPES #
