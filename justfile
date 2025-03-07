@@ -44,6 +44,14 @@ theme-plymouth:
     sudo plymouth-set-default-theme arc-mac-style
     sudo mkinitcpio -P
 
+## SSDM ##
+theme-sddm:
+    @echo "configuring sddm theme..."
+    git clone -b main https://github.com/archao-linux/archao-sddm.git && rm -r archao-sddm/.git
+    sudo cp -r archao-sddm /usr/share/sddm/themes/
+    echo -e "[Theme]\nCurrent=archao-sddm" | sudo tee -a /etc/sddm.conf
+    sudo systemctl enable sddm.service
+
 # Install OMB
 install-omb:
     @echo "installing omb..."
