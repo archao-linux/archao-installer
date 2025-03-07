@@ -1,1 +1,0 @@
-OSH_THEME="robbyrussell"

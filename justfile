@@ -18,6 +18,16 @@ install-packages:
     @echo "installing AUR packages..."
     yay -S --noconfirm {{AUR_PACKAGES}}
 
+# Install OMB
+install-omb:
+    @echo "installing omb..."
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+# & Configure OMB
+config-omb:
+    @echo "configuring omb..."
+    sed -i 's/OSH_THEME="[^"]*"/OSH_THEME="robbyrussell"/' ~/.bashrc
+
 # Configure Fastfetch
 config-fastfetch:
     @echo "configuring fastfetch..."
