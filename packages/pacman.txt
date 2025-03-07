@@ -1,0 +1,13 @@
+# BASIC #
+git
+nautilus
+
+# THEMING #
+kvantum-qt5
+
+# AUDIO #
+pipewire
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
+wireplumber

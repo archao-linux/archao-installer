@@ -1,0 +1,5 @@
+# BROWSER #
+zen-browser-bin
+
+# EDITOR #
+visual-studio-code-bin
