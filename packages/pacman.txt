@@ -15,3 +15,10 @@ pipewire-pulse
 pipewire-alsa
 pipewire-jack
 wireplumber
+
+# BLUETOOTH #
+bluez
+bluetui
+
+# WIFI #
+impala
