@@ -17,3 +17,9 @@ install-packages:
     yay --version || (git clone https://aur.archlinux.org/yay.git && rm -r yay/.git && cd yay && makepkg -si --noconfirm && cd .. && rm -rf yay)
     @echo "installing AUR packages..."
     yay -S --noconfirm {{AUR_PACKAGES}}
+
+# Configure Fastfetch
+config-fastfetch:
+    @echo "configuring fastfetch..."
+    fastfetch --gen-config
+    cp config/fastfetch.jsonc ~/.config/fastfetch/config.jsonc

@@ -2,6 +2,10 @@
 git
 nautilus
 
+# TERMINAL #
+kitty
+fastfetch
+
 # THEMING #
 kvantum-qt5
 
