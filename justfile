@@ -4,6 +4,7 @@ PACKAGES := `grep -v '^#' packages/pacman.txt | awk NF | tr '\n' ' ' | sed 's/ $
 AUR_PACKAGES := `grep -v '^#' packages/aur.txt | awk NF | tr '\n' ' ' | sed 's/ $//'`
 
 # RECIPES #
+## SYSTEM PACKAGES ##
 # Update System
 update-system:
     @echo "updating system..."
@@ -17,6 +18,17 @@ install-packages:
     yay --version || (git clone https://aur.archlinux.org/yay.git && rm -r yay/.git && cd yay && makepkg -si --noconfirm && cd .. && rm -rf yay)
     @echo "installing AUR packages..."
     yay -S --noconfirm {{AUR_PACKAGES}}
+
+## SYSTEMD BOOT ##
+# Maximize Resolution
+systemd-max:
+    @echo "maximizing resolution..."
+    echo -e "console-mode max\n" | sudo tee -a /boot/loader/loader.conf
+
+# Silent Boot
+systemd-silent:
+    @echo "silencing boot..."
+    sudo sed -i '/^options/s/$/ quiet splash/' /boot/loader/entries/*_linux-zen.conf
 
 # Install OMB
 install-omb:
