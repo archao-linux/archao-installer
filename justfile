@@ -33,3 +33,24 @@ config-fastfetch:
     @echo "configuring fastfetch..."
     fastfetch --gen-config
     cp config/fastfetch.jsonc ~/.config/fastfetch/config.jsonc
+
+# Enable Audio
+enable-audio:
+    @echo "enabling audio..."
+    # Enable pipewire
+    systemctl --user enable pipewire.service
+    systemctl --user start pipewire.service
+
+    # Enable pipewire-pulse
+    systemctl --user enable pipewire-pulse.service
+    systemctl --user start pipewire-pulse.service
+
+    # Enable wireplumber
+    systemctl --user enable wireplumber.service
+    systemctl --user start wireplumber.service
+
+# Enable Bluetooth
+enable-bluetooth:
+    @echo "enabling bluetooth..."
+    systemctl --user enable bluetooth.service
+    systemctl --user start bluetooth.service
