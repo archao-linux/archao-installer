@@ -40,8 +40,8 @@ hook-plymouth:
 # Add Plymouth Theme
 theme-plymouth:
     @echo "adding plymouth theme..."
-    sudo unzip files/plymouth/arc-mac-style.zip -d /usr/share/plymouth/themes/
-    sudo plymouth-set-default-theme arc-mac-style
+    sudo unzip files/plymouth/arch-mac-style.zip -d /usr/share/plymouth/themes/
+    sudo plymouth-set-default-theme arch-mac-style
     sudo mkinitcpio -P
 
 ## SSDM ##
