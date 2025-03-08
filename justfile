@@ -105,3 +105,4 @@ enable-bluetooth:
 select-themes:
     @echo "selecting themes..."
     sudo -E nwg-look
+    sudo -E kvantummanager
