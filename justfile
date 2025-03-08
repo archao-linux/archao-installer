@@ -112,3 +112,5 @@ select-themes:
     @echo "selecting themes..."
     sudo -E nwg-look
     sudo -E kvantummanager
+    sudo -E qt5ct
+    sudo -E qt6ct
