@@ -1,7 +1,21 @@
 # BASIC #
-git
 xarchiver
+micro
 nautilus
+
+# FONTS #
+ttf-cascadia-code-nerd
+ttf-cascadia-mono-nerd
+ttf-fira-code ttf-fira-mono
+ttf-fira-sans
+ttf-firacode-nerd
+ttf-iosevka-nerd
+ttf-iosevkaterm-nerd
+ttf-jetbrains-mono-nerd
+ttf-jetbrains-mono
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
+noto-fonts-emoji
 
 # TERMINAL #
 kitty
@@ -18,6 +32,10 @@ pipewire-pulse
 pipewire-alsa
 pipewire-jack
 wireplumber
+pamixer
+
+# BRIGHTNESS #
+brightnessctl
 
 # BLUETOOTH #
 bluez
