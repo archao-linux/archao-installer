@@ -1,5 +1,5 @@
 # Installer
 ## Dep
 ```bash
-sudo pacman -S just
+sudo pacman -S just git
 ```
