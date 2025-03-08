@@ -43,7 +43,9 @@ kvantum
 kvantum-qt5
 nwg-look
 qt5ct
+qt5-multimedia
 qt6ct
+qt6-multimedia
 
 # AUDIO #
 pipewire
