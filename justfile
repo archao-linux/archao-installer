@@ -59,7 +59,7 @@ config-hyprland:
     @echo "configuring hyprland..."
     git clone -b chao https://github.com/archao-linux/archao-hyprland.git && rm -rf archao-hyprland/.git
     cp -r archao-hyprland/configs/* ~/.config
-    cp -r archao-hyprland/assets/{backgrounds,wlogout} ~/.hypr-assets/ && sudo cp -r archao-hyprland/assets/wlogout /usr/local/share/wlogout/
+    mkdir -r ~/.hypr-assets && cp -r archao-hyprland/assets/{backgrounds,wlogout} ~/.hypr-assets/ && sudo cp -r archao-hyprland/assets/wlogout /usr/local/share/wlogout/
     sudo tar -xvf archao-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
     sudo tar -xvf archao-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
