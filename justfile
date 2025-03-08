@@ -24,7 +24,7 @@ install-packages:
 # Maximize Resolution
 systemd-max:
     @echo "maximizing resolution..."
-    echo -e "console-mode max\n" | sudo tee -a /boot/loader/loader.conf
+    sudo sed -i 's/^#\s*\(console-mode\) keep/\1 max/' /boot/loader/loader.conf
 
 # Silent Boot
 systemd-silent:
