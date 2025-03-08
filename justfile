@@ -98,8 +98,8 @@ enable-audio:
 # Enable Bluetooth
 enable-bluetooth:
     @echo "enabling bluetooth..."
-    systemctl --user enable bluetooth.service
-    systemctl --user start bluetooth.service
+    systemctl enable bluetooth.service
+    systemctl start bluetooth.service
 
 # Enable Avahi
 enable-avahi:
