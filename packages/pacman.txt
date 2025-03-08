@@ -1,6 +1,8 @@
 # BASIC #
-xarchiver
+chromium
 micro
+obsidian
+xarchiver
 nautilus
 
 # FONTS #
@@ -21,10 +23,25 @@ noto-fonts-emoji
 kitty
 fastfetch
 
+# HYPRLAND #
+hyprland
+waybar
+cliphist
+dunst
+papirus-icon-theme
+xdg-desktop-portal-hyprland
+polkit-kde-agent
+qt5-wayland
+qt6-wayland
+
 # THEMING #
 plymouth
 sddm
+kvantum
 kvantum-qt5
+nwg-look
+qt5ct
+qt6ct
 
 # AUDIO #
 pipewire

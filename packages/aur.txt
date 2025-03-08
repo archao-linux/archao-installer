@@ -3,3 +3,15 @@ zen-browser-bin
 
 # EDITOR #
 visual-studio-code-bin
+
+# HYPRLAND #
+tofi
+swww
+hyprpicker
+hyprlock
+wlogout
+grimblast
+hypridle
+
+# THEMING #
+kvantum-theme-catppuccin-git
