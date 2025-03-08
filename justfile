@@ -98,14 +98,14 @@ enable-audio:
 # Enable Bluetooth
 enable-bluetooth:
     @echo "enabling bluetooth..."
-    systemctl enable bluetooth.service
-    systemctl start bluetooth.service
+    sudo systemctl enable bluetooth.service
+    sudo systemctl start bluetooth.service
 
 # Enable Avahi
 enable-avahi:
     @echo "enabling avahi..."
-    systemctl --user enable avahi-daemon.service
-    systemctl --user start avahi-daemon.service
+    sudo systemctl enable avahi-daemon.service
+    sudo systemctl start avahi-daemon.service
 
 # Select Themes
 select-themes:
