@@ -45,6 +45,7 @@ theme-plymouth:
     sudo mkinitcpio -P
 
 ## SSDM ##
+# Add SSDM Theme
 theme-sddm:
     @echo "configuring sddm theme..."
     git clone -b main https://github.com/archao-linux/archao-sddm.git && rm -r archao-sddm/.git
@@ -52,6 +53,17 @@ theme-sddm:
     echo -e "[Theme]\nCurrent=archao-sddm" | sudo tee -a /etc/sddm.conf
     sudo systemctl enable sddm.service
 
+## DOTFILES ##
+# Configure Hyprland
+config-hyprland:
+    @echo "configuring hyprland..."
+    git clone -b chao https://github.com/archao-linux/archao-hyprland.git && rm -r archao-hyprland/.git
+    cp -r archao-hyprland/configs/* ~/.config
+    cp -r archao-hyprland/assets/backgrounds ~/.hypr-assets/ && cp -r archao-hyprland/assets/wlogout ~/.hypr-assets/ && sudo cp -r archao-hyprland/assets/wlogout /usr/local/share/wlogout
+    sudo tar -xvf archao-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+    sudo tar -xvf archao-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
+
+## MISC ##
 # Install OMB
 install-omb:
     @echo "installing omb..."
