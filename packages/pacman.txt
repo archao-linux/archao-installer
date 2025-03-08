@@ -2,6 +2,7 @@
 chromium
 micro
 obsidian
+unzip
 xarchiver
 nautilus
 telegram-desktop
