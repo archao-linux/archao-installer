@@ -100,3 +100,8 @@ enable-bluetooth:
     @echo "enabling bluetooth..."
     systemctl --user enable bluetooth.service
     systemctl --user start bluetooth.service
+
+# Select Themes
+select-themes:
+    @echo "selecting themes..."
+    sudo -E nwg-look
