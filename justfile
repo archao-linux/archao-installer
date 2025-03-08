@@ -101,6 +101,12 @@ enable-bluetooth:
     systemctl --user enable bluetooth.service
     systemctl --user start bluetooth.service
 
+# Enable Avahi
+enable-avahi:
+    @echo "enabling avahi..."
+    systemctl --user enable avahi-daemon.service
+    systemctl --user start avahi-daemon.service
+
 # Select Themes
 select-themes:
     @echo "selecting themes..."
