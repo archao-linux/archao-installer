@@ -16,7 +16,7 @@ install-packages:
     @echo "installing packages..."
     sudo pacman -S --noconfirm {{PACKAGES}}
     @echo "check & conditionally install yay..."
-    yay --version || (git clone https://aur.archlinux.org/yay.git && rm -r yay/.git && cd yay && makepkg -si --noconfirm && cd .. && rm -rf yay)
+    yay --version || (git clone https://aur.archlinux.org/yay.git && rm -rf yay/.git && cd yay && makepkg -si --noconfirm && cd .. && rm -rf yay)
     @echo "installing AUR packages..."
     yay -S --noconfirm {{AUR_PACKAGES}}
 
@@ -48,7 +48,7 @@ theme-plymouth:
 # Add SSDM Theme
 theme-sddm:
     @echo "configuring sddm theme..."
-    git clone -b main https://github.com/archao-linux/archao-sddm.git && rm -r archao-sddm/.git
+    git clone -b main https://github.com/archao-linux/archao-sddm.git && rm -rf archao-sddm/.git
     sudo cp -r archao-sddm /usr/share/sddm/themes/
     echo -e "[Theme]\nCurrent=archao-sddm" | sudo tee -a /etc/sddm.conf
     sudo systemctl enable sddm.service
@@ -57,7 +57,7 @@ theme-sddm:
 # Configure Hyprland
 config-hyprland:
     @echo "configuring hyprland..."
-    git clone -b chao https://github.com/archao-linux/archao-hyprland.git && rm -r archao-hyprland/.git
+    git clone -b chao https://github.com/archao-linux/archao-hyprland.git && rm -rf archao-hyprland/.git
     cp -r archao-hyprland/configs/* ~/.config
     cp -r archao-hyprland/assets/backgrounds ~/.hypr-assets/ && cp -r archao-hyprland/assets/wlogout ~/.hypr-assets/ && sudo cp -r archao-hyprland/assets/wlogout /usr/local/share/wlogout
     sudo tar -xvf archao-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
