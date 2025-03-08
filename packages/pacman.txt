@@ -4,6 +4,7 @@ micro
 obsidian
 xarchiver
 nautilus
+telegram-desktop
 
 # FONTS #
 ttf-cascadia-code-nerd
