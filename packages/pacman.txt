@@ -24,6 +24,7 @@ noto-fonts-emoji
 # TERMINAL #
 kitty
 fastfetch
+btop
 
 # HYPRLAND #
 hyprland
