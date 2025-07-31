@@ -15,3 +15,7 @@ hypridle
 
 # THEMING #
 kvantum-theme-catppuccin-git
+
+# AI
+opencode-bin
+crush-bin
