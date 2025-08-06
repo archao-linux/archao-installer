@@ -66,3 +66,6 @@ bluetui
 # WIFI #
 iwd
 impala
+
+# PROGRAMMING #
+rustup
