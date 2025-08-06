@@ -107,6 +107,12 @@ enable-avahi:
     sudo systemctl enable avahi-daemon.service
     sudo systemctl start avahi-daemon.service
 
+# Enable IWD
+enable-avahi:
+    @echo "enabling iwd..."
+    sudo systemctl enable iwd.service
+    sudo systemctl start iwd.service
+
 # Select Themes
 select-themes:
     @echo "selecting themes..."
