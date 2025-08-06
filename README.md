@@ -23,6 +23,7 @@ sudo pacman -S just git
 | `enable-audio` | Enables and starts PipeWire audio services (pipewire, pipewire-pulse, wireplumber) |
 | `enable-bluetooth` | Enables and starts the Bluetooth service |
 | `enable-avahi` | Enables and starts the Avahi daemon for network service discovery |
+| `enable-iwd` | Enables and starts the IWD (iNet Wireless Daemon) service for wireless networking |
 | `select-themes` | Opens theme selection tools (nwg-look, kvantummanager, qt5ct, qt6ct) for GUI customization |
 
 ## Usage
