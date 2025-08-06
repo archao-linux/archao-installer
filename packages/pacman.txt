@@ -64,4 +64,5 @@ bluez
 bluetui
 
 # WIFI #
+iwd
 impala
