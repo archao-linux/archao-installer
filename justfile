@@ -108,7 +108,7 @@ enable-avahi:
     sudo systemctl start avahi-daemon.service
 
 # Enable IWD
-enable-avahi:
+enable-iwd:
     @echo "enabling iwd..."
     sudo systemctl enable iwd.service
     sudo systemctl start iwd.service
