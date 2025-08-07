@@ -29,7 +29,7 @@ systemd-max:
 # Silent Boot
 systemd-silent:
     @echo "silencing boot..."
-    sudo sed -i '/^options/s/$/ quiet splash/' /boot/loader/entries/*_linux-zen.conf
+    sudo sed -i '/^options/s/$/ quiet loglevel=3 splash/' /boot/loader/entries/*_linux-zen.conf
 
 ## PLYMOUTH ##
 # Add Plymouth Hook
